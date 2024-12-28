@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{  
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 23vw 1fr;
+    /* background-color: red; */
+}
+.left {
+    position: fixed;
+    width: 23vw;
+    padding: 10px;
+    height: 100%;
+    grid-column: 1;
+    
+}
+
+.right {
+    height: 100vh;
+    display: block;
+    position:relative;
+    grid-column: 2;
+    overflow:hidden;
+    background-color: black;
+    
+
+    /* width: calc(100%-23vw); */
+}
+
+.content{
+   height: 100%;
+    gap:1%;
+    overflow: scroll;
+    justify-content: center;
+    padding-top: 1em;
+    padding-left: 1.5em;
+    margin-left:1em;
+    padding-bottom: 200px;
+    border-radius: 7px;
+    
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.5em;
+    margin-bottom: 2em;
+    /* flex-basis: 30%; */
+}
+.cards img{
+    clip-path: circle();
+    height: 15em;
+    width:10em ;
+    object-fit: contain;
+    object-position: center;
+}
+
+.artist{ 
+    cursor: pointer;
+  
+    border: 200px soild red;
+    margin-top: 1em;
+    height: 16em;
+    width: 11em;
+
+}
+.artist:hover{
+    background-color: #29292f6d;
+ 
+
+}
+.playbar{
+    border-radius: 7px;
+    bottom: 0;
+    width: calc(100%-23vw);
+    /* background-color: transparent; */
+    margin: 1em;
+    margin-right: 2em;
+    position:sticky;
+    /* width: 100vw; */
+    align-items: center;
+    height: 3em;
+    display: flex;
+    background-color:purple;
+    justify-content: center;
+    text-align: center;
+    /* margin-bottom: 200px; */
+}
+.play{
+    height: 2.5em;
+    width:15em;
+    /* overflow: hidden; */
+    padding-bottom: 0.5em;
+    justify-content: center;
+    background-color: red;
+}
+    
+.play img{
+ margin: 1em;
+}
+nav{ 
+    /* background-color: yellow; */
+    background-color: black;
+    position: sticky;
+    margin: 1em;
+    padding: 7px;
+    border-radius: 7px;
+    text-align: end;
+    overflow: hidden;
+}
+.Pop-art{
+    font-style: normal;
+    font-style: SpotifyMixUITitle, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    color:#ffff;
+    font-weight: bolder;
+    font-size: x-large;
+    text-decoration: none;
+    cursor: pointer;
+}
+.Pop-art:hover{
+    text-decoration: underline;
+}
+
+.home ul li{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    width: 15px;
+    padding-top: 14px;
+    font-weight: bold;
+}
+ .library{
+ min-height:50vh;
+ margin: 11px;
+ 
+    position: relative;
+} 
+.heading{cursor: pointer;
+    /* background-color: red; */
+    /* overflow: hidden; */
+    display: flex;
+    gap: 15px;
+    width: 100% ;
+    padding: 23px 14px;
+    padding-top: 14px;
+    font-weight: bold;
+    align-items: center;
+    font-size: 13px;
+
+}
+.heading img{
+    width: 26px;
+}
+.create-play-list-section{
+    margin: 5px 10px;
+    padding:5px 10px;
+    background-color: rgba(255, 255, 255, 0.053);
+}
+.eff-1{
+    background:#fff;
+    font-size: 12px;
+    padding:9px 10px;
+    border-radius:20px;
+    margin: 10px 5px;
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+    display: inline-block;
+    transition: all 0.1s;
+}
+
+
+.footer {
+    display: flex;
+    font-size: 12px;
+    color: grey;
+    flex-wrap: wrap;
+    gap: 13px;
+    position: absolute;
+    bottom: 0;
+    padding: 90px 5px 0;
+    /* background-color: red; */
+
+}
+
+.footer a {
+    text-decoration: none;
+    color: grey;
+}
+.lang-1{
+    margin: 4em 0 15em 9em;
+    border-radius: 6px;
+    border:2px solid whitesmoke;
+    padding: 12px;
+}

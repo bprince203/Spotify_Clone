@@ -1,0 +1,53 @@
+.border{
+    margin: 3px;
+    border: 2px solid red;
+}
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.item-center{
+    align-items: center;
+}
+.bg-black{
+    background-color: black;
+    color: white;
+}
+.invert{
+    filter: invert(1);
+}
+.bg-grey{
+    background-color: #121212;
+    /* background-color: red; */
+}
+.rounded{
+    border-radius: 7px;
+}
+.m-1{
+    margin: 5px;
+}
+.p1{
+    padding:  20px;
+}
+.b-1{ margin-top: 0.5em;
+    padding: 7px;
+    outline:none;
+    border: 0;
+    background-color: transparent;
+    border-radius: 15px;
+    /* background-color:; */
+}
+.b-bg-white{
+    background-color: whitesmoke;
+}
+.b-1:hover{
+    /* font-size: 10px; */
+    scale: 1.1;
+}
+ .eff-1:hover{
+    cursor: pointer;
+    background-color: #999;
+    color:#fff;
+}
