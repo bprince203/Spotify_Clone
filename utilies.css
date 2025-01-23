@@ -51,3 +51,14 @@
     background-color: #999;
     color:#fff;
 }
+#play,#next,#prev{
+    cursor: pointer;
+}
+.logo{
+    margin: 5px;
+    padding: 18px;
+}
+.SearchBox{
+    width: 30px;
+    height: 12px;
+}

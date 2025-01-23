@@ -16,6 +16,12 @@ function secondsToMinutesSeconds(seconds) {
 
     return `${String(minutes).padStart(2, '0')}:${String(remainingSeconds).padStart(2, '0')}`;
 }
+function ShortingName(text,maxLength){
+    if(text.length >maxLength){
+        return text.substring(0,maxLength -3)+'...';
+    }
+    return text;
+}
 
 async function getSongs(folder) {
     currFolder = folder;
@@ -38,15 +44,16 @@ async function getSongs(folder) {
     songUL.innerHTML = ""; // Clear previous entries
 
     songs.forEach((song) => {
+        const SongsName= ShortingName(song.replaceAll("%20"," "));
         songUL.innerHTML += `
             <li>
                 <img class="invert" src="./SVG/music.svg" alt="">
                 <div class="info">
-                    <div>${song.replaceAll("%20", " ")}</div>
+                    <div>${SongsName}</div>
                     <div>Song Artist</div>
                 </div>
                 <div class="playnow">
-                    <div>Play Now</div>
+                    
                     <img src="./SVG/play.svg" class="invert">
                 </div>
             </li>`;
