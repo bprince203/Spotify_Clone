@@ -25,7 +25,7 @@ function ShortingName(text,maxLength){
 
 async function getSongs(folder) {
     currFolder = folder;
-    const response = await fetch(`http://127.0.0.1:5500/${folder}/`);
+    const response = await fetch(`${folder}/`);
     const html = await response.text();
 
     const parser = new DOMParser();
